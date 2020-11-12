@@ -1,0 +1,44 @@
+main {
+  min-height: 80vh;
+}
+
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+h2 {
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+}
+
+h3 {
+  padding: 1rem 0;
+}
+
+.rating span {
+  margin: 0.1rem;
+}
+.color-nav {
+  background-color: rgb(228, 52, 61);
+}
+.logo {
+  font-family: fantasy;
+  font-size: 1.8rem;
+  color: chartreuse;
+}
+.logo-p {
+  font-size: 0.9rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: capitalize;
+  color: white;
+  width: 500px;
+}
+.card {
+  transition: all 0.8s ease-in-out;
+}
+.card:hover {
+  background-color: rgb(132, 133, 179);
+  transform: scale(1.1);
+  overflow: hidden;
+}
