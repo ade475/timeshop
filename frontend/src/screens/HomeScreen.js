@@ -17,7 +17,7 @@ const HomeScreen = () => {
 
   return (
     <React.Fragment>
-      <h1>Latest Products</h1>
+      <h1 className='homeScreen-title'>Our Watches</h1>
       {loading ? (
         <Loader />
       ) : error ? (

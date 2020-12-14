@@ -6,8 +6,9 @@ import userRoutes from './routes/userRoutes.js';
 import orderRoutes from './routes/orderRoutes.js';
 import connectDB from './config/db.js';
 import { notFound, errorHandler } from './middleware/errorMiddleware.js';
+import dotenv from 'dotenv';
 
-config();
+dotenv.config();
 
 connectDB();
 
@@ -16,7 +17,7 @@ const app = express();
 app.use(express.json());
 
 app.get('/', (req, res) => {
-	res.send('API is running...');
+  res.send('API is running...');
 });
 
 app.use('/api/products', productRoutes);
@@ -27,14 +28,14 @@ app.use(notFound);
 app.use(errorHandler);
 
 app.get('/api/config/paypal', (req, res) =>
-	res.send(process.env.PAYPAL_CLIENT_ID)
+  res.send(process.env.PAYPAL_CLIENT_ID)
 );
 
 const PORT = process.env.PORT || 5000;
 
 app.listen(
-	PORT,
-	console.log(
-		`Server running in ${process.env.NODE_ENV} mode on Port ${PORT}`.yellow.bold
-	)
+  PORT,
+  console.log(
+    `Server running in ${process.env.NODE_ENV} mode on Port ${PORT}`.yellow.bold
+  )
 );

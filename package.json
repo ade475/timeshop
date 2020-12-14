@@ -1,7 +1,7 @@
 {
-  "name": "proshop",
+  "name": "timeshop",
   "version": "1.0.0",
-  "description": "MERN shopping cart app",
+  "description": "MERN shopping app",
   "main": "server.js",
   "type": "module",
   "scripts": {
@@ -12,16 +12,6 @@
     "data:import": "node backend/seeder",
     "data:destroy": "node backend/seeder -d"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Catevika/UDEMY_BRADTRAVERSY_MERN_ProShop.git"
-  },
-  "author": "Dominique Bello",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Catevika/UDEMY_BRADTRAVERSY_MERN_ProShop/issues"
-  },
-  "homepage": "https://github.com/Catevika/UDEMY_BRADTRAVERSY_MERN_ProShop#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",

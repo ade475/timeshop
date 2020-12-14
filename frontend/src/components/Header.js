@@ -19,8 +19,8 @@ const Header = () => {
         <Container>
           <LinkContainer to='/'>
             <Navbar.Brand>
-              <h1 class='logo'>TimeShop</h1>
-              <h4 class='logo-p'>Elegant and Luxurious Men'Watches</h4>
+              <h1 className='logo'>Time-Shop</h1>
+              <h4 className='logo-p'>Luxurious Men's Watches</h4>
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
